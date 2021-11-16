@@ -20,6 +20,7 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 10vh;
+  background-color: #000;
 }
 body{
   background-color:#000000;
@@ -41,6 +42,7 @@ body{
 }
 .container-table{
   margin: 20px 20px 20px;
+  height: 60%;
 }
 .table-header{
   align-items: center;
@@ -105,7 +107,7 @@ a:hover, a:active {
 .home{
   width: 100%;
   color: #FF5722;
-
+  height: 100%;
   z-index: 0;
 	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
 }
@@ -200,7 +202,11 @@ video {
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
-    height: 400px;
+    height: 100vh;
+    margin-bottom: 150px;
+  }
+  .footer{
+    position: fixed;
   }
   img{
     width: 100%;
@@ -213,6 +219,9 @@ video {
   .container-talkies{
     width: 100%;
     margin: 5px;
+  }
+  .container-table{
+    height: 60vh;
   }
   .table-data{
     font-size: 10px;

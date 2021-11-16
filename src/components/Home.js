@@ -13,7 +13,7 @@ const detailsSylvie = "A Unknown Loki Variant is still at large after creating v
 const Home = () => {
     return (
         <div className="home">
-            <video autoplay controls>
+            <video autoPlay controls>
                 <source src="tva-commercial.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

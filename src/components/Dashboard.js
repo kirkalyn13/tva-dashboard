@@ -10,9 +10,10 @@ const Dashboard = () => {
             <div className="container-table">
                 <TableHeader />
                 <div className="nexus-data">
-                {nexusData.map(nexus => {
+                {nexusData.map((nexus,key) => {
                     return(
-                    <TimeTable 
+                    <TimeTable
+                    key={key} 
                     eventNum={nexus.eventNum}
                     date={nexus.date}
                     time={nexus.time}
