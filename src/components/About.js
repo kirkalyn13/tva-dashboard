@@ -10,12 +10,16 @@ const tvaContent = `The Time Variance Authority (TVA) is a bureaucratic organiza
 
 const About = () => {
     return (
-        <div className="about">
-            <img src="/images/timekeepers.jpg" width="60%" height="500px" position="sticky" alt=""/> 
-            <Text title={timeTitle} content={timeContent} />
-            <div className="tva-about">
-                <img src="tva_logo.png" className="img-members" width="200" height="200" position="sticky" alt=""/>
-                <Text title={tvaTitle} content={tvaContent} />
+        <div className="about space-background">
+            <div className='about-image'>
+                <img src="/images/timekeepers.jpg" width="60%" height="600px" position="sticky" alt=""/> 
+            </div>
+            <div className="tva-description">
+                <Text title={timeTitle} content={timeContent} />
+                <div className="tva-about">
+                    <img src="tva_logo.png" className="img-members" width="200" height="200" position="sticky" alt=""/>
+                    <Text title={tvaTitle} content={tvaContent} />
+                </div>
             </div>
             <Members />
         </div>

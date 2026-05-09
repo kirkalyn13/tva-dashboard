@@ -8,7 +8,7 @@ const homeContent = `The Time Variance Authority exists outside of time and spac
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className="home space-background">
             <Hero title={homeTitle} content={homeContent} />
             <div className="hero">
                 <Text title={homeTitle} content={homeContent} />
