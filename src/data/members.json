@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Judge Renslayer",
+    "content": "Ravonna Lexus Renslayer is a judge of the Time Variance Authority. Created by the Time-Keepers, Renslayer decides the punishments given to beings who break or split the Sacred Timeline, as she did when a variant of Loki was brought before her for trial.",
+    "imageSrc": "/images/judge_renslayer.png"
+  },
+  {
+    "title": "Agent Mobius",
+    "content": "Agent Mobius M. Mobius is a high-ranking member of the Time Variance Authority who specializes in the investigation and analysis of particularly dangerous time criminals. After beginning an assignment to investigate a variant of Loki who had been killing TVA agents, Mobius recruited another Loki variant in the hopes that he could help the organization stop his alternate self.",
+    "imageSrc": "/images/mobius_m_mobius.png"
+  },
+  {
+    "title": "Miss Minutes",
+    "content": "Miss Minutes is the artificially intelligent animated mascot of the Time Variance Authority. Cheerful, polite, and well-spoken, she remains steadfastly loyal to the TVA and serves as the primary informational guide for newly apprehended Variants entering the organization's facilities.",
+    "imageSrc": "/images/ms_minutes.png"
+  },
+  {
+    "title": "TVA Task Force",
+    "content": "In order to maintain and protect the Sacred Timeline, the TVA organized a task force of Minutemen and Hunters to track down and immobilize rogue entities known as Variants causing Nexus Events. Their mandate is to hunt, apprehend, and prune Variants to restore the timeline in accordance with the Time-Keepers' design.",
+    "imageSrc": "/images/hunter_B15.png"
+  },
+  {
+    "title": "TVA Clerical Team",
+    "content": "The TVA is equipped with various employees provisioning Sacred Timeline violators. The collection and filing of evidence — including the dangerous use of Infinity Stones — is managed by the Evidence Filing Desk. All records are stored, monitored, and maintained in a secure library for future reference.",
+    "imageSrc": "/images/casey.png"
+  }
+]
