@@ -18,7 +18,6 @@ const Home = () => {
                     </Link>
                 </nav>
             </div>
-            
             <Bulletin />
         </div>
     )

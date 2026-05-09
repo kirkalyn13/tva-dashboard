@@ -6,7 +6,7 @@ const Header = () => {
         <>
         <header className='header'>
             <div className="img">
-            <img src="tva_logo.png" width="130" height="90" alt="logo"/>
+            <img src="tva_logo.png" width="130" height="90" alt="logo" className="img-logo"/>
             </div>
           <h1 className='title'>Time Variance Authority</h1>
         <div className="container-nav"></div>
