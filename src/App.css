@@ -173,10 +173,19 @@ a:hover, a:active {
 .img-members {
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.img-members:hover {
+  transform: scale(1.08);
 }
 
 img {
   border-radius: 5%;
+}
+
+.img-logo {
+  margin: 0 1rem;
 }
 
 .bulletin {
