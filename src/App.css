@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
 .App {
   text-align: center;
 }
@@ -26,6 +28,7 @@
 }
 
 body {
+  font-family: 'Rajdhani', sans-serif;
   background-color: #000;
   margin: 0;
   padding: 0;
@@ -50,7 +53,8 @@ body {
 }
 
 .container-dashboard {
-  height: 100vh;
+  font-family: 'Share Tech Mono', monospace;
+  height: 80vh;
   max-width: 1200px;
   margin: 3rem auto;
   padding: 0 24px;
@@ -89,6 +93,7 @@ body {
 }
 
 .table-data {
+  font-family: 'Share Tech Mono', monospace;
   margin-top: 2px;
   width: 100%;
   color: #FF5722;
@@ -99,6 +104,7 @@ th, td {
 }
 
 .nexus-data {
+  font-family: 'Share Tech Mono', monospace;
   height: 30vh;
   overflow-y: scroll;
 }
