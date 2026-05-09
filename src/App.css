@@ -4,172 +4,200 @@
 
 .header {
   display: flex;
+  position: sticky;
   top: 0;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
   min-height: 10vh;
   background: #FF5722;
-  color: #000000;
+  color: #000;
+  z-index: 100;
 }
-.footer{
+
+.footer {
   display: flex;
-  position: relative;
-  bottom: 0;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
   min-height: 10vh;
   background-color: #000;
 }
-body{
-  background-color:#000000;
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
 }
-.title{
-  padding:5px;
+
+.title {
+  padding: 5px;
 }
-.container-nav{
+
+.hero{
+  height: 100vh;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 24px;
+}
+.container-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: medium;
+  color: #FF5722;
+  font-size: large;
 }
-.container-timeline{
-  top: 20px
+
+.container-dashboard {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 24px;
 }
-.container-dashboard{
-  height: 80vh;
-}
-.container-table{
-  margin: 20px 20px 20px;
+
+.container-table {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0.5rem 24px;
   height: 60%;
 }
-.table-header{
+
+.container-text {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 5px 24px;
+}
+
+.container-members {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 24px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.table-header {
   margin-top: 20px;
   width: 100%;
   text-align: center;
   color: #FF5722;
   font-size: large;
 }
-.table-data{
+
+.table-data {
   margin-top: 2px;
   width: 100%;
   color: #FF5722;
 }
-th, td{
+
+th, td {
   width: 25%;
 }
-.nexus-data{
+
+.nexus-data {
   height: 30vh;
   overflow-y: scroll;
 }
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
+.container-text p {
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #E64A19;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #FF5722;
-  border-radius: 10px;
-}
-.container-nav{
-  display: flex;
-  color: #FF5722;
-  justify-content: space-around;
-  align-items: center;
-  font-size: large;
-}
 a:link, a:visited {
-  background-color: #000000;
+  background-color: transparent;
   color: #FF5722;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-right:2px;
+  margin-right: 2px;
   font-weight: bold;
   border-radius: 5px;
+  transition: all 0.2s ease;
 }
 
 a:hover, a:active {
-  background-color: #FF5722;
-  border: 3px solid #FFCCBC;
-  color: white;
+  background-color: #E64A19;
+  border: 1px solid rgba(255, 204, 188, 0.4);
+  color: #fff;
 }
-.home{
+
+.home {
   width: 100%;
   color: #FF5722;
   height: 100%;
   z-index: 0;
-	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
 }
-.about{
+
+.about {
   margin: 20px;
   color: #FF5722;
   z-index: 0;
-	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
 }
-.foot{
+
+.foot {
   margin-left: 300px;
   justify-content: flex-end;
   font-size: x-small;
 }
-.members{
+
+.members {
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: #E64A19;
   padding: 10px;
-  margin-bottom:  10px;
+  margin-bottom: 10px;
   border: 1px solid #E64A19;
   border-radius: 5px;
-  object-fit:cover;
+  object-fit: cover;
+  transition: border-color 0.2s ease;
 }
-.container-text{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 5px 20px 5px 20px;
-  margin: 1rem;
+
+.members:hover {
+  border-color: #FF5722;
 }
-.img-members{
+
+.img-members {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
+
 img {
   border-radius: 5%;
 }
-.bulletin{
+
+.bulletin {
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-.bulletin-item{
+
+.bulletin-item {
   width: 50%;
   padding: 30px 5px;
-  /*border: 1px solid #E64A19;
-  border-radius: 5px;*/
 }
-.container-members{
-  height: 500px;
-  overflow-y: scroll;
+
+.tva-about {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto 0;
+  padding: 0 24px;
 }
-.tva-about{
-  display:flex;
-  margin-top: 30px;
-}
+
 button {
-  background-color: #FF5722; /* Green */
+  background-color: #FF5722;
   border: none;
-  color: white;
+  color: #fff;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -177,53 +205,90 @@ button {
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
+
+button:hover,
+a button:hover {
+  background-color: #E64A19;
+  border: none;
+  color: #fff;
+}
+
 video {
-  /* override other styles to make responsive */
-  width: 60%    !important;
-  height: auto   !important;
-  align-items: center;
-  margin-top: 20px;
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 20px auto 0;
   border-radius: 10px;
 }
 
-@media(max-width: 500px){
-  .members{
-    display: flex;
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(230, 74, 25, 0.08);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E64A19;
+  border-radius: 10px;
+  border: 1px solid rgba(230, 74, 25, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5722;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #FF7043;
+}
+
+@media (max-width: 500px) {
+  .members {
     flex-direction: column;
   }
-  .tva-about{
-    display:flex;
+
+  .tva-about {
     flex-direction: column;
     margin-top: 30px;
   }
-  .bulletin{
-    display: flex;
+
+  .bulletin {
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
     height: 100vh;
     margin-bottom: 150px;
   }
-  .footer{
+
+  .footer {
     position: fixed;
   }
-  img{
+
+  img {
     width: 100%;
     height: auto;
   }
-  .vid{
+
+  .vid {
     height: 240px;
     width: 320px;
   }
-  .container-talkies{
+
+  .container-talkies {
     width: 100%;
     margin: 5px;
   }
-  .container-table{
+
+  .container-table {
     height: 60vh;
   }
-  .table-data{
+
+  .table-data {
     font-size: 10px;
   }
 }

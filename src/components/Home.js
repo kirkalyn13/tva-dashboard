@@ -1,10 +1,11 @@
+import Hero from './Hero'
 import Text from './Text'
 import { Link } from 'react-router-dom'
 
 const homeTitle = '"For All Time. Always."'
-const homeContent = `Protect the "Sacred Timeline" with the rest of the TVA Team. Monitor Anomalies and Nexus Events from the Sacred Timeline.`
+const homeContent = `The Time Variance Authority exists outside of time and space, tasked with the sacred duty of preserving the one true timeline. As an agent of the TVA, you are the last line of defense against Variants, Nexus Events, and the branching chaos that threatens to unravel the very fabric of reality.\nMonitor anomalies as they emerge across centuries. Track Nexus Events before they branch. Work alongside your fellow agents to prune what must be pruned and protect what must be protected.\nThe Sacred Timeline is not just a record of what has happened — it is the guarantee of what must happen. Every deviation, no matter how small, is a threat. Every branch left unchecked is a universe that should not exist.\nStay vigilant. Stay aligned. For all time. Always.`
 const bulletinTitle = "THE NEXUS BULLETIN"
-const bulletinContent = "See the latest Nexus Issues."
+const bulletinContent = `Your centralized briefing on the latest confirmed Nexus Events across the Sacred Timeline. Updated in real time as our analysts process incoming anomaly reports from every corner of known history — past, present, and future.`
 const missingLoki = "MISSING VARIANT: LOKI LAUFEYSON"
 const detailsLoki = "Variant Loki Laufeyson detained after escaping with the Space Stone. Last seen on a deployed mission to Haven Hills, Alabama (2050) with Agent Mobius M. Mobius and Hunter-B15."
 const missingSylvie = "WANTED: UNKNOWN LOKI VARIANT "
@@ -13,16 +14,15 @@ const detailsSylvie = "A Unknown Loki Variant is still at large after creating v
 const Home = () => {
     return (
         <div className="home">
-            <video autoPlay controls>
-                <source src="tva-commercial.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            <Text title={homeTitle} content={homeContent} />
-            <nav>
-                <Link to="/timeline">
-                    <button type="button">View Sacred Timeline</button>
-                </Link>
-            </nav>
+            <Hero title={homeTitle} content={homeContent} />
+            <div className="hero">
+                <Text title={homeTitle} content={homeContent} />
+                <nav>
+                    <Link to="/timeline">
+                        <button type="button">View Sacred Timeline</button>
+                    </Link>
+                </nav>
+            </div>
             <div className="container-bulletin">
                 <img src="tva_logo.png" className="img-members" width="200" height="200" position="sticky" alt=""/>
                 <Text title={bulletinTitle} content={bulletinContent} />
