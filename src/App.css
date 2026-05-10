@@ -40,8 +40,7 @@ body {
   padding: 5px;
 }
 
-.hero{
-  height: 100vh;
+.hero {
   max-width: 1200px;
   margin: 3rem auto;
   padding: 0 24px;
@@ -57,7 +56,6 @@ body {
 
 .container-dashboard {
   font-family: 'Share Tech Mono', monospace;
-  height: 80vh;
   max-width: 1200px;
   margin: 3rem auto;
   padding: 0 24px;
@@ -67,7 +65,6 @@ body {
   max-width: 1200px;
   margin: 20px auto;
   padding: 0.5rem 24px;
-  height: 60%;
 }
 
 .container-text {
@@ -78,13 +75,13 @@ body {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 5px 24px;
+  color: #FF5722;
 }
 
 .container-members {
   max-width: 1200px;
   margin: 3rem auto;
   padding: 0 24px;
-  height: 80vh;
 }
 
 .table-header {
@@ -104,6 +101,7 @@ body {
 
 th, td {
   width: 25%;
+  padding: 8px 4px;
 }
 
 .nexus-data {
@@ -111,6 +109,7 @@ th, td {
   height: 30vh;
   overflow-y: scroll;
 }
+
 .container-text p {
   line-height: 1.8;
   letter-spacing: 0.3px;
@@ -137,26 +136,12 @@ a:hover, a:active {
   color: #fff;
 }
 
-.home {
-  width: 100%;
-  color: #FF5722;
-  height: 100%;
-  z-index: 0;
-  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
-}
-
-.about {
-  margin: 20px;
-  color: #FF5722;
-  z-index: 0;
-  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
-}
-
 .foot {
   margin-left: 300px;
   justify-content: flex-end;
   font-size: x-small;
 }
+
 .members {
   margin: 2rem auto;
   padding: 0 24px;
@@ -246,16 +231,16 @@ video {
   border-radius: 10px;
 }
 
-.about-image{
+.about-image {
   width: 100% !important;
-  height: 80vh !important;
+  height: auto !important;
   display: block;
   margin: 2.5rem auto;
   border-radius: 10px;
 }
 
 .tva-description {
-  height: 100vh
+  min-height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -303,7 +288,7 @@ video {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: 
+  background-image:
     radial-gradient(0.5px 0.5px at 10% 20%, #fff 100%, transparent),
     radial-gradient(0.5px 0.5px at 30% 50%, #fff 100%, transparent),
     radial-gradient(0.5px 0.5px at 50% 80%, #fff 100%, transparent),
@@ -329,26 +314,95 @@ video {
   animation: twinkle 4s ease-in-out infinite, drift 120s linear infinite;
 }
 
-@media (max-width: 500px) {
-  .members {
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .bulletin {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .bulletin-item {
+    width: 100%;
+    padding: 16px 0;
   }
 
   .tva-about {
     flex-direction: column;
-    margin-top: 30px;
+  }
+
+  .container-nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: medium;
+  }
+
+  .foot {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 500px) {
+  .header {
+    flex-wrap: wrap;
+    min-height: auto;
+    padding: 8px 0;
+  }
+
+  .container-nav {
+    flex-direction: column;
+    gap: 4px;
+    font-size: small;
+  }
+
+  a:link, a:visited {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .hero {
+    margin: 1rem auto;
+    padding: 0 16px;
+  }
+
+  .container-dashboard,
+  .container-table,
+  .container-text,
+  .container-members {
+    margin: 1rem auto;
+    padding: 0 16px;
   }
 
   .bulletin {
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
-    height: 100vh;
-    margin-bottom: 150px;
+    padding: 0 16px;
+    margin-bottom: 80px;
   }
 
-  .footer {
-    position: fixed;
+  .bulletin-item {
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .tva-about {
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 0 16px;
+  }
+
+  .member {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .members {
+    height: auto;
+    max-height: 60vh;
+    padding: 0 16px;
   }
 
   img {
@@ -356,21 +410,43 @@ video {
     height: auto;
   }
 
-  .vid {
-    height: 240px;
-    width: 320px;
+  .img-members {
+    width: 80%;
   }
 
-  .container-talkies {
-    width: 100%;
-    margin: 5px;
+  video {
+    margin: 12px auto 0;
+  }
+
+  .about-image {
+    margin: 1rem auto;
+  }
+
+  table {
+    font-size: 11px;
+  }
+
+  th, td {
+    padding: 6px 2px;
+  }
+
+  .nexus-data {
+    height: 40vh;
   }
 
   .container-table {
-    height: 60vh;
+    height: auto;
   }
 
-  .table-data {
-    font-size: 10px;
+  .footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 100%;
   }
 }
