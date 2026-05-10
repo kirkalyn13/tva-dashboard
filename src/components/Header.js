@@ -8,7 +8,9 @@ const Header = () => {
 
   return (
     <header className="header" style={{ position: 'relative', overflow: 'visible' }}>
-      <img src="tva_logo.png" width="70" height="50" alt="logo" className="img-logo" />
+      <Link to="/">
+        <img src="tva_logo.png" width="70" height="50" alt="logo" className="img-logo" />
+      </Link>
       <h1 className="title">Time Variance Authority</h1>
       <Nav />
       <button

@@ -473,11 +473,11 @@ video {
   gap: 4px;
 }
 
-.world-tree {
+/* .world-tree {
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   overflow: auto;
-}
+} */
 
 /* ── Tablet ── */
 @media (max-width: 768px) {
