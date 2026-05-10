@@ -7,16 +7,16 @@ const NotFound = () => {
         <img src="/miss-minutes.png" alt="Miss Minutes" width="300" height="300" />
         <h2>Looks like you've created a Nexus Event.</h2>
         <p>This page doesn't exist on the Sacred Timeline.</p>
-        <Link to="/">
-          <button type="button">Return to the Timeline</button>
+        <Link to="/" className="return">
+          Return to the Timeline
         </Link>
 
         <Link
-          to="/world-tree"
+          to="/citadel"
           style={{
             marginTop: '60px',
             opacity: 0.08,
-            fontSize: '10px',
+            fontSize: '16px',
             letterSpacing: '2px',
             color: '#4CAF50',
             background: 'transparent',
@@ -24,7 +24,7 @@ const NotFound = () => {
             cursor: 'default',
           }}
         >
-          ᛃ
+          ᛃ THE END OF TIME ᛃ
         </Link>
       </div>
     </div>

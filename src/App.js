@@ -6,7 +6,7 @@ import Home from './routes/Home'
 import Dashboard from './routes/Dashboard'
 import About from './routes/About'
 import NotFound from './routes/NotFound'
-import WorldTree from './routes/WorldTree'
+import Citadel from './routes/Citadel';
 
 const WithNav = ({ children }) => (
   <>
@@ -30,8 +30,8 @@ function App() {
           <Route path="/tva">
             <WithNav><About /></WithNav>
           </Route>
-          <Route path="/world-tree">
-            <WorldTree />
+          <Route path="/citadel">
+            <Citadel />
           </Route>
           <Route>
             <WithNav><NotFound /></WithNav>
