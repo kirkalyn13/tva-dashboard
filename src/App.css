@@ -229,6 +229,11 @@ img {
   margin: 0 1rem;
 }
 
+.logo {
+  border: 0 !important;
+  padding: 0!important;
+}
+
 .bulletin {
   display: flex;
   max-width: 1200px;
@@ -642,6 +647,10 @@ video {
   .hero {
     margin: 1rem auto;
     padding: 0 16px;
+  }
+
+  .app-title {
+    display: none;
   }
 
   .container-dashboard,
