@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 🕰️ TVA Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> *“For all time. Always.”*
 
-## Available Scripts
+Welcome, Analyst.
 
-In the project directory, you can run:
+This React-powered TVA Dashboard is your official gateway to monitoring the Sacred Timeline, reviewing TVA bulletins, and pretending everything is completely under control.
 
-### `npm start`
+You may access the dashboard [here](https://time-variance-authority.vercel.app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📺 Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 📰 Home Bulletin
+Stay updated with the latest TVA announcements, multiversal incidents, and urgent reminders such as:
 
-### `npm test`
+- Do **NOT** feed the Temporal Aura Scanner.
+- Variants are not coworkers.
+- Miss Minutes is always listening. 🙂
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🌌 Sacred Timeline Dashboard
+Monitor timeline stability in real time with:
 
-### `npm run build`
+- Branch activity tracking
+- Nexus Event alerts
+- Timeline integrity status
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If branches begin appearing rapidly… that is probably fine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📚 About the TVA
+Learn more about the Time Variance Authority:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Our glorious purpose
+- Department overviews
+- Absolutely no mention of any hidden truths
 
-### `npm run eject`
+## 🌳 A Curious Rumor...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Some analysts claim that if you look closely enough at the end of time,  
+you might glimpse something impossible:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> A great tree… holding together every timeline.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Naturally, the TVA denies these rumors.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Probably.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Run the App
 
-### Code Splitting
+```bash
+npm install --legacy-peer-deps
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Then report to your assigned temporal workstation.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## ⚠️ TVA Notice
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Unauthorized timeline tampering may result in pruning, interrogation, or awkward conversations with Mobius.
 
-### Advanced Configuration
+Have a nice day.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**For All Time. Always.**
