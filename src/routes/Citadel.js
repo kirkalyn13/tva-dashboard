@@ -2,7 +2,7 @@ import WorldTree from '../components/WorldTree'
 
 const Citadel = () => {
   return (
-    <div className="world-tree">
+    <div className="world-tree-container space-background">
         <WorldTree />
     </div>
   )
