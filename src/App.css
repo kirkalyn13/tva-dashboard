@@ -110,6 +110,21 @@ body {
   font-size: large;
 }
 
+.cta {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cta:hover::after,
+.cta:active::after {
+  width: 100%;
+  background-color: #E64A19;
+}
+
 .table-data {
   font-family: 'Share Tech Mono', monospace;
   margin-top: 2px;
@@ -230,7 +245,25 @@ button {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition: background-color 0.2s ease;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+button:hover::after,
+a button:hover::after {
+  width: 100%;
 }
 
 button:hover,
@@ -342,6 +375,26 @@ video {
 .header .container-nav a:link,
 .header .container-nav a:visited {
   color: #000;
+}
+
+.header .container-nav a {
+  position: relative;
+}
+
+.header .container-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFF;
+  transition: width 0.3s ease;
+}
+
+.header .container-nav a:hover::after,
+.header .container-nav a:active::after {
+  width: 100%;
 }
 
 .header .container-nav a:hover,

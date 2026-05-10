@@ -13,8 +13,8 @@ const Home = () => {
             <div className="hero">
                 <Text title={homeTitle} content={homeContent} />
                 <nav>
-                    <Link to="/timeline">
-                        <button type="button">View Sacred Timeline</button>
+                    <Link to="/timeline" className="cta">
+                        VIEW SACRED TIMELINE
                     </Link>
                 </nav>
             </div>
