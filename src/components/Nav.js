@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 
-export const Nav = () => (
+const Nav = ({ onLinkClick }) => (
   <nav className="container-nav">
-    <Link to="/">HOME</Link>
-    <Link to="/timeline">TIMELINE</Link>
-    <Link to="/tva">ABOUT</Link>
+    <Link to="/" onClick={onLinkClick}>HOME</Link>
+    <Link to="/timeline" onClick={onLinkClick}>TIMELINE</Link>
+    <Link to="/tva" onClick={onLinkClick}>ABOUT</Link>
   </nav>
 )
+
 export default Nav

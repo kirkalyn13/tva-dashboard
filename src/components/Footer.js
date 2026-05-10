@@ -4,7 +4,7 @@ import '../App.css'
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src="tva_logo.png" width="100" height="70" alt="logo" className="img-logo" />
+      <img src="tva_logo.png" width="70" height="50" alt="logo" className="img-logo" />
       <nav className="container-nav">
         <Link to="/">HOME</Link>
         <Link to="/timeline">TIMELINE</Link>
