@@ -19,7 +19,24 @@ const series = [
         enabled: true,
         easing: 'linear',
         speed: 1000,
-        },
+      },
+      toolbar: {
+        show: true,
+        tools: {
+          download: false,
+          selection: true,
+          zoom: true,
+          zoomin: true,
+          zoomout: true,
+          pan: true,
+          reset: true
+        }
+      },
+      zoom: {
+        enabled: true,
+        type: 'x',
+        autoScaleYaxis: true
+      }
     },
     colors: ["#FFFFFF", "#FF5722"],
     dataLabels: {
@@ -54,6 +71,38 @@ const series = [
           return  val + " anomalies"
         }
       },
+    },
+    annotations: {
+      yaxis: [
+        {
+          y: 1,
+          borderColor: '#FF4D6D',
+          borderWidth: 2,
+          strokeDashArray: 0,
+          label: {
+            style: {
+              color: '#ffffff',
+              background: '#FF4D6D',
+              fontSize: '10px',
+              fontWeight: 600
+            }
+          }
+        },
+        {
+          y: -1,
+          borderColor: '#FF4D6D',
+          borderWidth: 2,
+          strokeDashArray: 0,
+          label: {
+            style: {
+              color: '#ffffff',
+              background: '#FF4D6D',
+              fontSize: '10px',
+              fontWeight: 600
+            }
+          }
+        }
+      ]
     },
   }
 
