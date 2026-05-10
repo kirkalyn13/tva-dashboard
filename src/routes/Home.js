@@ -1,6 +1,6 @@
-import { Bulletin } from './Bulletin'
-import Hero from './Hero'
-import Text from './Text'
+import { Bulletin } from '../components/Bulletin'
+import Hero from '../components/Hero'
+import Text from '../components/Text'
 import { Link } from 'react-router-dom'
 
 const homeTitle = '"For All Time. Always."'

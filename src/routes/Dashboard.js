@@ -1,6 +1,6 @@
-import Timeline from './Timeline'
-import TimeTable from './TimeTable'
-import TableHeader from './TableHeader'
+import Timeline from '../components/Timeline'
+import TimeTable from '../components/TimeTable'
+import TableHeader from '../components/TableHeader'
 import nexusData from "../data/nexus-data.json"
 
 const Dashboard = () => {
