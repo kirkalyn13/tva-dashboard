@@ -12,7 +12,7 @@ const series = [
 ]
   const options = {
     chart: {
-      height: 350,
+      height: 400,
       type: 'line',
       foreColor: '#FF5722',
       animations: {

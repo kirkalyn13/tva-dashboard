@@ -9,22 +9,25 @@
   position: sticky;
   top: 0;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   min-height: 10vh;
   background: #FF5722;
   color: #000;
   z-index: 100;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .footer {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   min-height: 10vh;
   background-color: #000;
-  padding: 1rem 0;
+  padding: 1rem;
+  box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
@@ -38,12 +41,27 @@ body {
 
 .title {
   padding: 5px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .hero {
   max-width: 1200px;
   margin: 3rem auto;
   padding: 0 24px;
+}
+
+.home {
+  width: 100%;
+  color: #FF5722;
+  height: 100%;
+  z-index: 0;
+}
+
+.about {
+  margin: 20px;
+  color: #FF5722;
+  z-index: 0;
 }
 
 .container-nav {
@@ -132,7 +150,6 @@ a:link, a:visited {
 
 a:hover, a:active {
   background-color: #E64A19;
-  border: 1px solid rgba(255, 204, 188, 0.4);
   color: #fff;
 }
 
@@ -314,6 +331,26 @@ video {
   animation: twinkle 4s ease-in-out infinite, drift 120s linear infinite;
 }
 
+.header .container-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.header .container-nav a:link,
+.header .container-nav a:visited {
+  color: #000;
+}
+
+.header .container-nav a:hover,
+.header .container-nav a:active {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
 /* ── Tablet ── */
 @media (max-width: 768px) {
   .bulletin {
@@ -346,9 +383,10 @@ video {
 /* ── Mobile ── */
 @media (max-width: 500px) {
   .header {
-    flex-wrap: wrap;
-    min-height: auto;
-    padding: 8px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 8px;
   }
 
   .container-nav {
@@ -439,9 +477,16 @@ video {
   }
 
   .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 16px;
     position: fixed;
     bottom: 0;
-    z-index: 100;
+  }
+
+  .title {
+    font-size: 16px;
   }
 
   button {
