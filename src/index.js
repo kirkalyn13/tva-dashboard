@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ApexCharts from 'apexcharts'
+import PropTypes from 'prop-types'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+window.React = React
+window.ReactDOM = ReactDOM
+window.ApexCharts = ApexCharts
+window.PropTypes = PropTypes
 
 ReactDOM.render(
   <React.StrictMode>
