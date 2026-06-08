@@ -14,7 +14,7 @@ You may access the dashboard [here](https://time-variance-authority.vercel.app/)
 Stay updated with the latest TVA announcements, multiversal incidents, and urgent reminders such as:
 
 - Do **NOT** feed the Temporal Aura Scanner.
-- Variants are not coworkers.
+- Variants are not coworkers. ❌
 - Miss Minutes is always listening. 🙂
 
 ### 🌌 Sacred Timeline Dashboard
